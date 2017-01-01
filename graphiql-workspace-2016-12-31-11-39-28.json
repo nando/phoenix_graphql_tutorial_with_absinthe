@@ -1,0 +1,113 @@
+{
+  "key": "graphiql",
+  "lastId": 6,
+  "tabIds": [
+    "tab3",
+    "tab4",
+    "tab6"
+  ],
+  "closedTabs": [],
+  "defaultUrl": "http://localhost:4000/graphiql",
+  "defaultQuery": "",
+  "defaultVariables": "{}",
+  "defaultProxy": false,
+  "defaultHeaders": [],
+  "usedUrls": [
+    "http://localhost:4000/graphiql"
+  ],
+  "recentHeaders": [],
+  "maxTabHistory": 20,
+  "maxUrlHistory": 20,
+  "maxHistory": 20,
+  "savedQueries": [
+    {
+      "query": "mutation CreatePost {\n  create_post(title: \"Título del super post\", body: \"Awesome Post\", user_id: 1) {\n    id\n  }\n}",
+      "variables": "{}"
+    }
+  ],
+  "activeId": "tab6",
+  "tabs": [
+    {
+      "id": "tab3",
+      "name": "update posts",
+      "url": "http://localhost:4000/graphiql",
+      "proxy": false,
+      "headers": [],
+      "collapsed": false,
+      "maxHistory": 20,
+      "history": [
+        {
+          "query": "mutation UpdatePost {\n  update_post(id: 11, post: {title: \"My Updated Post Title\", body: \"Awesome Postsss\", user_id: 2}) {\n    id,\n    title,\n    body\n  }\n}",
+          "variables": "{}"
+        },
+        {
+          "query": "mutation UpdatePost {\n  update_post(id: 11, post: {title: \"My Updated Post Title\", body: \"Awesome Postsss\", user_id: 1}) {\n    id,\n    title,\n    body\n  }\n}",
+          "variables": "{}"
+        }
+      ],
+      "graphiql:query": "mutation UpdatePost {\n  update_post(id: 11, post: {title: \"My Updated Post Title\", body: \"Awesome Postsss\", user_id: 2}) {\n    id,\n    title,\n    body\n  }\n}",
+      "graphiql:variables": "{}",
+      "graphiql:editorFlex": 1,
+      "graphiql:variableEditorHeight": 200,
+      "graphiql:docExplorerWidth": 350
+    },
+    {
+      "id": "tab4",
+      "name": "POSTS W/ USERS",
+      "url": "http://localhost:4000/graphiql",
+      "proxy": false,
+      "headers": [],
+      "collapsed": false,
+      "maxHistory": 20,
+      "history": [
+        {
+          "query": "{posts {\n  title \n  user {name}\n}}",
+          "variables": "{}"
+        }
+      ],
+      "graphiql:query": "{posts {\n  title \n  user {name}\n}}",
+      "graphiql:variables": "{}",
+      "graphiql:operationName": null,
+      "graphiql:editorFlex": 1,
+      "graphiql:variableEditorHeight": 200,
+      "graphiql:docExplorerWidth": 350
+    },
+    {
+      "id": "tab6",
+      "name": "UPDATE USER",
+      "url": "http://localhost:4000/graphiql",
+      "proxy": false,
+      "headers": [],
+      "collapsed": false,
+      "maxHistory": 20,
+      "history": [
+        {
+          "query": "mutation UpdateUser {\n  update_user(id: 3, user: {password: \"foobar\"}) {\n    id\n  }\n}",
+          "variables": "{}"
+        },
+        {
+          "query": "mutation UpdateUser {\n  update_user(id: 4, user: {name: \"Enol Pérez\", password: \"foobar\"}) {\n    id\n  }\n}",
+          "variables": "{}"
+        },
+        {
+          "query": "mutation UpdateUser {\n  update_user(id: 2, user: {password: \"foobar\"}) {\n    id\n  }\n}",
+          "variables": "{}"
+        },
+        {
+          "query": "mutation UpdateUser {\n  update_user(id: 2, password: \"foobar\"}) {\n    id\n  }\n}",
+          "variables": "{}"
+        },
+        {
+          "query": "mutation UpdateUser {\n  update_user(id: 1, user: {name: \"Dani Sánchez\", email: \"ryan@ryan.com\", password: \"foobar\"}) {\n    id\n  }\n}",
+          "variables": "{}"
+        }
+      ],
+      "graphiql:query": "mutation UpdateUser {\n  update_user(id: 3, user: {password: \"foobar\"}) {\n    id\n  }\n}",
+      "graphiql:variables": "{}",
+      "graphiql:operationName": "UpdateUser",
+      "graphiql:editorFlex": 1,
+      "graphiql:variableEditorHeight": 200,
+      "graphiql:docExplorerWidth": 350
+    }
+  ]
+}
